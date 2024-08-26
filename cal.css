@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.hdqwalls.com/wallpapers/peyto-lake-canada-mountains-4k-tj.jpg'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.display-box {
+    width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 22px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+#btn {
+    background-color: #f76c6c;
+    color: white;
+}
+
+#btn:hover {
+    background-color: #e55a5a;
+}
+
+#discoButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(45deg,#ff0000, #ff7f00, #00ff00, #0000ff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#discoButton:hover {
+    opacity: 0.8;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.calculator.dark-mode {
+    background-color: #444;
+    border-color: #666;
+}
+
+.display-box.dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+input[type="button"].dark-mode {
+    background-color: #666;
+    border-color: #888;
+    color: #fff;
+}
+
+input[type="button"].dark-mode:hover {
+    background-color: #777;
+}
+
+#btn.dark-mode {
+    background-color: #d9534f;
+}
+
+#btn.dark-mode:hover {
+    background-color: #c9302c;
+}
+
+@keyframes disco {
+    0% { background: red; }
+    16% { background: orange; }
+    33% { background: yellow; }
+    50% { background: green; }
+    66% { background: blue; }
+    83% { background: indigo; }
+    100% { background: violet; }
+}
