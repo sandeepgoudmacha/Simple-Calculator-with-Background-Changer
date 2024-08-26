@@ -10,7 +10,7 @@ def read_file(file_path):
 st.set_page_config(page_title="Simple Calculator", layout="wide")
 
 # Load the HTML content
-html_content = read_file('index.html')
+html_content = read_file('cal.html')
 css_content = read_file('cal.css')
 js_content = read_file('cal.js')
 
