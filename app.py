@@ -248,4 +248,18 @@ html_content = """
     // Function to start the disco effect
     function startDiscoEffect() {
         const discoButton = document.getElementById('discoButton');
-        discoButton.style.animation = 'disco 
+        discoButton.style.animation = 'disco 2s infinite';
+    }
+
+    // Function to stop the disco effect
+    function stopDiscoEffect() {
+        const discoButton = document.getElementById('discoButton');
+        discoButton.style.animation = '';
+    }
+  </script>
+</body>
+</html>
+"""
+
+# Use Streamlit to display the HTML content
+st.components.v1.html(html_content, height=800)
