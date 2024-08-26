@@ -1,20 +1,20 @@
 import streamlit as st
-import os
+from pathlib import Path
 
-# Function to read the content of a file
+# Function to read file content
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
 
-# Set the page configuration
+# Set page configuration
 st.set_page_config(page_title="Simple Calculator", layout="wide")
 
-# Load the HTML content
+# Load HTML, CSS, and JS content
 html_content = read_file('cal.html')
 css_content = read_file('cal.css')
 js_content = read_file('cal.js')
 
-# Inject CSS and JavaScript into the HTML
+# Inject CSS and JavaScript into HTML
 html_with_css_js = f"""
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
